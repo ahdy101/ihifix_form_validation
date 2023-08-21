@@ -2,51 +2,81 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
+  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
 .container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
   border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  padding: 30px 40px;
+  }
+h2 {
+ text-align: center;
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+.input-container {
+  margin-bottom: 20px;
 }
 
 label {
+  text-align: center;
+  font-weight: bold;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+input {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  padding: 12px;
+  border: 1px solid #d0d9e2;
+  border-radius: 5px;
   font-size: 16px;
+  transition: border-color 0.3s ease;
 }
 
-.error {
-  color: red;
-  font-size: 14px;
+input.input-error {
+  border-color: #ff7676;
 }
 
+.success {
+  display: inline-block;
+  color: #f32020;
+  margin-left: 10px;
+}
 
-input[type="submit"] {
-  background-color: black;
+.success-message {
+  display: block;
+  color: #4caf50;
+  margin-top: 10px;
+  text-align: center;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 3px;
+  padding: 12px 20px;
+  border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
-  background-color: rgb(126, 126, 126);
-  color: black;
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }
