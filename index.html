@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <form id="registration-form">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Form Validation</h2>
+    <form id="registration-form">
+      <div class="input-container">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
-  
+        <span class="success" id="name-success"></span>
+      </div>
+
+      <div class="input-container">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-  
+        <span class="success" id="email-success"></span>
+      </div>
+
+      <div class="input-container">
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
-        <span id="password-error" class="error"></span>
-  
+        <span class="success" id="password-success"></span>
+      </div>
+
+      <div class="input-container">
         <label for="confirmPassword">Confirm Password:</label>
         <input type="password" id="confirmPassword" name="confirmPassword" required>
-        <span id="confirm-password-error" class="error"></span>
-  
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-    <script src="script.js"></script>
-  </body>
+        <span class="success" id="confirm-password-success"></span>
+      </div>
+
+      <span class="success-message" id="success-message"></span>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
